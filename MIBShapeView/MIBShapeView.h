@@ -2,12 +2,22 @@
 //  MIBShapeView.h
 //  MIBShapeView
 //
-//  Created by Ben Packard on 10/24/13.
-//  Copyright (c) 2013 Ben Packard. All rights reserved.
+//  Created by Ben Packard on 10/18/13.
+//  Copyright (c) 2013 Made in Bletchley. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
-@interface MIBShapeView : NSObject
+typedef NS_ENUM(NSInteger, ShapeType) {
+	CircleShape,
+	StarShape
+};
+
+@interface MIBShapeView : UIView
+
+@property ShapeType shapeType;
+@property UIColor *foregroundColor;
+@property UIColor *outlineColor;
+@property CGFloat radiusScale;
 
 @end
