@@ -73,7 +73,7 @@
     CGPoint pt = CGPointMake(center.x - (outerRadius * cosf(theta)), center.y - (outerRadius * sinf(theta)));
     CGContextMoveToPoint(context, pt.x, pt.y);
 	
-    for (int i = 0; i < points; i = i + 1)
+    for (NSInteger i = 0; i < points; i = i + 1)
 	{
         // Calculate next inner point (moving clockwise), accounting for crossing of 0 degrees
         theta = theta - (arcPerPoint / 2.0f);
