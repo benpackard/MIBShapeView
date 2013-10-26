@@ -22,8 +22,8 @@
 	{
 		//some obnoxious default colors
 		self.shapeType = CircleShape;
-		self.backgroundColor = [UIColor greenColor];
-		self.foregroundColor = [UIColor redColor];
+		self.backgroundColor = [UIColor orangeColor];
+		self.foregroundColor = [UIColor purpleColor];
 		self.outlineColor = nil;
 		self.radiusScale = 1.0f;
     }
